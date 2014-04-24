@@ -1,10 +1,10 @@
 **Project introduction：**
 
-  - NJBLog through  [Nodejs](http://nodejs.org/ "Nodejs") and [express](http://expressjs.com/) Provide the Restful API.
+  - EDMP through  [Nodejs](http://nodejs.org/ "Nodejs") and [express](http://expressjs.com/) Provide the Restful API.
   - Data stored in [Mongodb](http://www.mongodb.org/)，Driven by [Mongoose](https://github.com/LearnBoost/mongoose) 。
   - Front-End  use of the [Extjs](http://www.sencha.com/)。
-  - NJBlog through [jack](https://github.com/jiangtl) for UT 。
-  - NJBlog building by Grunt。
+  - EDMP through [jack](https://github.com/jiangtl) for UT 。
+  - EDMP building by Grunt。
  。
 
 **Checkout and Run：**
@@ -31,12 +31,12 @@
 
 **项目介绍：**
 
-  - EDM营销管理采用[Nodejs](http://nodejs.org/ "Nodejs")+[express](http://expressjs.com/)来提供Restful API.
+  - EDM营销管理平台采用[Nodejs](http://nodejs.org/ "Nodejs")+[express](http://expressjs.com/)来提供Restful API.
   - 数据库采用 [Mongodb](http://www.mongodb.org/)，通过[Mongoose](https://github.com/LearnBoost/mongoose)驱动。
-  - NJBlog前台采用[Extjs](http://www.sencha.com/)进行开发。
-  - NJBlog目前所有前端JS代码全部采用模块化编写。
-  - NJBlog使用强大的grunt对项目进行构建工作。
-  - NJBlog全部代码托管在GitHub上。
+  - EDMP前台采用[Extjs](http://www.sencha.com/)进行开发。
+  - EDMP目前所有前端JS代码全部采用模块化编写。
+  - EDMP使用强大的grunt对项目进行构建工作。
+  - EDMP全部代码托管在GitHub上。
 
 **获得并运行项目：**
 
