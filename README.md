@@ -2,6 +2,7 @@
 
   - EDMP through  [Nodejs](http://nodejs.org/ "Nodejs") and [express](http://expressjs.com/) Provide the Restful API.
   - Data stored in [Mongodb](http://www.mongodb.org/)，Driven by [Mongoose](https://github.com/LearnBoost/mongoose) 。
+  - EDMP through SendCloud API send email。
   - Front-End  use of the [Extjs](http://www.sencha.com/)。
   - EDMP through [jack](https://github.com/jiangtl) for UT 。
   - EDMP building by Grunt。
@@ -34,6 +35,7 @@
   - EDM营销管理平台采用[Nodejs](http://nodejs.org/ "Nodejs")+[express](http://expressjs.com/)来提供Restful API.
   - 数据库采用 [Mongodb](http://www.mongodb.org/)，通过[Mongoose](https://github.com/LearnBoost/mongoose)驱动。
   - EDMP前台采用[Extjs](http://www.sencha.com/)进行开发。
+  - EDMP通过SendCloud API 接口实现邮件发送。
   - EDMP目前所有前端JS代码全部采用模块化编写。
   - EDMP使用强大的grunt对项目进行构建工作。
   - EDMP全部代码托管在GitHub上。
