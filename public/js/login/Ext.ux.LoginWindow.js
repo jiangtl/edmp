@@ -65,7 +65,7 @@ Ext.ux.LoginWindow = function(config) {
 							xtype : 'textfield',
 							id : this.usernameId,
 							name : this.usernameField,
-							value: "admin",
+							value: "",
 							fieldLabel : this.usernameLabel,
 							vtype : this.usernameVtype,
 							validateOnBlur : false,
@@ -73,7 +73,7 @@ Ext.ux.LoginWindow = function(config) {
 						}, {
 							xtype : 'textfield',
 							inputType : 'password',
-							value: "admin",
+							value: "",
 							id : this.passwordId,
 							name : this.passwordField,
 							fieldLabel : this.passwordLabel,
