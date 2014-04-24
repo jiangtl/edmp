@@ -4,14 +4,12 @@
   "main": "app.js",
   "dependencies": {
     "express": "3.0.6",
-    "mongoose": "latest",
+    "mongoose": "3.8.7",
     "colors": "latest",
     "mongodb": "latest",
     "xml2js": "0.4.2"
   },
-  "devDependencies": {
-    "jack": "*"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/jiangtl/edmp.git"
