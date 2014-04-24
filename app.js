@@ -1,63 +1,39 @@
-var sys = require('sys');
-var fs = require('fs');
-var express = require('express');
+/**
+ * Module dependencies.
+ */
+
+var express = require('express')
+    , routes = require('./routes/routes')
+    , user = require('./routes')
+    , config = require('./config')
+    , http = require('http')
+    , path = require('path')
+    , fs = require('fs')
+
 var app = express();
-var email = require('./email');
-var category = require('./category');
-var collection = require('./collection');
-var sc = require('./sc');
 
-app.configure(function () {	
-	app.use(express.methodOverride());
-	app.use(express.bodyParser());
-	app.use(app.router);
-	app.use('/web', express.static(__dirname + '/web'))
-});
-
-app.post('/category/list', function(req, res) {
-	category.list(req, res);
-});
-app.post('/category/add', function(req, res) {
-	category.add(req, res);
-});
-app.post('/category/update', function(req, res) {
-	category.update(req, res);
-});
-app.get('/category/del', function(req, res) {
-	category.del(req, res);
+app.configure(function () {
+    app.set('port', process.env.PORT || 3000);
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'ejs');//app.set('view engine', 'html');
+    app.use(express.favicon());
+    app.use(express.logger('dev'));
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(express.cookieParser(config.cookieSecret));    
+    app.use(express.session({secret: config.cookieSecret}));//设置session
+    app.use(app.router);
+    app.use(express.static(path.join(__dirname, '/public')));
+    /*  app.use(express.static(path.join(__dirname, 'resources')));
+      app.use(express.static(path.join(__dirname, 'views/partials')));*/
 });
 
-app.get('/collection/list', function(req, res) {
-	collection.list(req, res);
+app.configure('development', function () {
+    app.use(express.errorHandler());
 });
 
-app.get('/email/list', function (req, res) {
-	var search = {
-		type : req.query.type,
-		addTime :  req.query.addTime,
-		email :  req.query.email,
-		limit :	 req.query.limit,
-		start :  req.query.start,
-	};
-	var callback = req.query.callback;	
-	email.list(search, function(data){
-		res.send(callback+"("+data+")");
-	});	
+routes(app);
+
+http.createServer(app).listen(app.get('port'), function () {
+    console.log("Express server listening on port " + app.get('port'));
 });
-app.get('/scapi/getlist', function(req, res){
-	var search = {
-		type : req.query.type,
-		limit : 10000,
-		email : req.query.email,
-		start_date :  req.query.start_date,
-		end_date :  req.query.end_date,
-		days :	 req.query.days
-	};
-	var callback = req.query.callback;	
-	console.log(callback);
-	sc.getlist(search, function(data){
-		res.send(callback+"("+data+")");
-	});	
-})
-app.listen(8088);
-console.log("8088 running...");

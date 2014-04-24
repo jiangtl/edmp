@@ -1,0 +1,23 @@
+{
+  "name": "edmp",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "3.0.6",
+    "mongoose": "latest",
+    "colors": "latest",
+    "mongodb": "latest",
+    "xml2js": "0.4.2"
+  },
+  "devDependencies": {
+    "jack": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jiangtl/edmp.git"
+  },
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov"
+  }
+}

@@ -1,0 +1,60 @@
+.ext-ie .x-tree .x-panel-body {position: relative;}
+.ext-ie .x-tree .x-tree-root-ct  {position: absolute;}
+.docs-header .x-panel-body {
+    background:transparent;
+}
+.api-title {
+    font:normal 16px helvetica, arial, tahoma, sans-serif;
+    color:black;
+    margin:5px;
+}
+.loading-indicator {
+    font-size:11px;
+    background-image:url(../images/default/grid/loading.gif);
+    background-repeat: no-repeat;
+    background-position:top left;
+    padding-left:20px;
+    height:18px;
+    text-align:left;
+}
+#loading-mask{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    background-color:white;
+}
+#loading{
+    position:absolute;
+    left:45%;
+    top:40%;
+    padding:2px;
+    z-index:20001;
+    height:auto;
+}
+#loading img {
+    margin-bottom:5px;
+}
+#loading .loading-indicator{
+    background:white;
+    color:#555;
+    font:bold 13px helvetica,arial,tahoma,sans-serif;
+    padding:10px;
+    margin:0;
+    text-align:center;
+    height:auto;
+}
+.ext-ie {
+    vertical-align:middle;
+}
+.x-viewport body {
+  background: #ededed url(../images/hd-bg.png) repeat-x !important;
+}
+.x-border-layout-ct {
+  background:none;
+}
+.abstract{
+    margin-bottom: 10px;
+}
