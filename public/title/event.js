@@ -1,5 +1,5 @@
-Ext.namespace("event.title");
-event.title = (function(){
+Ext.namespace("_event.title");
+_event.title = (function(){
 	var f_form = system.factory.Form;
 	var fields = field.title;
 	var optionTitleGroupFn = function(option, grid) {

@@ -2,7 +2,7 @@
     Ext.BLANK_IMAGE_URL = '/ext3/resources/images/default/s.gif';
     Ext.QuickTips.init();
     var fields = field.scaccount;
-    var events = event.scaccount;
+    var events = _event.scaccount;
     var f_search = system.factory.Search;//搜索框面板
     var f_grid = system.factory.ListGrid;//列表框面板
     //表格初始化

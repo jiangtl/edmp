@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "3.0.6",
     "mongoose": "3.8.7",
+    "ejs": "latest",
     "colors": "latest",
     "mongodb": "latest",
     "xml2js": "0.4.2"

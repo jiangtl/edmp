@@ -19,7 +19,7 @@ system.Tree = (function(){
         ]},
         {"id":"six","text":"SC账号","cls":"package","singleClickExpand":true, children:[
         	{"text":"账号列表","id":"group600","isClass":true,"iconCls":"cls","cls":"cls","leaf":true,"action":"scaccount/index.html"}
-        ]},
+        ]}
         
     ]};
     if(Ext.util.Cookies.get("username") == "admin") {

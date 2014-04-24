@@ -1,5 +1,5 @@
-Ext.namespace("event.scaccount");
-event.scaccount = (function(){
+Ext.namespace("_event.scaccount");
+_event.scaccount = (function(){
 	var f_form = system.factory.Form;
 	var fields = field.scaccount;
 	var optionScAccountFn = function(option, grid) {

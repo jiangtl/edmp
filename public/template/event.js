@@ -1,5 +1,5 @@
-Ext.namespace("event.template");
-event.template = (function(){
+Ext.namespace("_event.template");
+_event.template = (function(){
 	var f_form = system.factory.Form;
 	var fields = field.template;
 	var optionTemplateFn = function(option, grid) {

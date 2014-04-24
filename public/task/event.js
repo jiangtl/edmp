@@ -1,5 +1,5 @@
-Ext.namespace("event.task");
-event.task = (function(){
+Ext.namespace("_event.task");
+_event.task = (function(){
 	var f_form = system.factory.Form;
 	var fields = field.task;
 	var optionTaskFn = function(option, grid) {

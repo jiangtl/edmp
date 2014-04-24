@@ -64,7 +64,7 @@ field.emailgroup = (function(){
         {header: "创建时间",name:"create_at", width: 200, dataIndex: 'create_at', sortable: true},
         {header: "创建人",name:"create_user", columnWidth: .2, dataIndex: 'create_user', sortable: true},
         {header: "类型",name:"type", columnWidth: .2, dataIndex: 'type', sortable: true},
-        {header: "路径",name:"path", width: 50, dataIndex: 'path', sortable: true,hidden:true},
+        {header: "路径",name:"path", width: 50, dataIndex: 'path', sortable: true,hidden:true}
     ];
 
     //自定义查询项

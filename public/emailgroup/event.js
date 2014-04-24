@@ -94,6 +94,5 @@ events.emailgroup = (function(){
 	}
 	return {
 		importTxt : impEmailgroup
-
 	}
 })()
