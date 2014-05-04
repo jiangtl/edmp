@@ -1,7 +1,7 @@
 Ext.namespace("field.template");
 field.template = (function(){
-	var html = {xtype:'textarea',fieldLabel: '内容',name: 'html',anchor:'95%',allowBlank: false,};
-    var name = {xtype:'textfield',fieldLabel: '名称',name: 'name',anchor:'95%',allowBlank: false,};    
+	var html = {xtype:'textarea',fieldLabel: '内容',name: 'html',anchor:'95%',allowBlank: false};
+    var name = {xtype:'textfield',fieldLabel: '名称',name: 'name',anchor:'95%',allowBlank: false};    
     var deadline = {xtype:'datefield',fieldLabel: '有效日期',name: 'deadline',anchor:'95%',format:'Y-m-d'};    
     var fields = {
         name : name,

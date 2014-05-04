@@ -75,7 +75,7 @@ _event.template = (function(){
             var data = {
                 name:record.get('name'),                     
                 html:record.get('html'),
-                deadline:record.get('deadline'),
+                deadline:record.get('deadline')
             };
 			//赋值
 			for(var name in data){
